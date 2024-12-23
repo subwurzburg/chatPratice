@@ -16,8 +16,6 @@ const apiStore = useApiStore();
     <!-- 問題列 -->
     <Question />
     <!-- Loading 層 -->
-    <div v-if="apiStore.loading" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <Loading />
-    </div>
+    <Loading />
   </div>
 </template>

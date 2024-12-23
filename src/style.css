@@ -20,4 +20,22 @@
   .dark .input {
     @apply bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-500 focus:ring-blue-500;
   }
+
+  /* Toggle Checkbox */
+  .toggle-checkbox {
+    @apply appearance-none w-8 h-4 bg-gray-300 rounded-full relative cursor-pointer transition-all duration-300 ease-in-out;
+  }
+
+  .toggle-checkbox:checked {
+    @apply bg-green-500;
+  }
+
+  .toggle-checkbox::before {
+    content: "";
+    @apply absolute w-4 h-4 bg-white rounded-full top-1/2 left-1 transform -translate-y-1/2 transition-all duration-300 ease-in-out;
+  }
+
+  .toggle-checkbox:checked::before {
+    @apply left-[calc(100%-1.25rem)]
+  }
 }

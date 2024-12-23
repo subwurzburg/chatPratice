@@ -9,8 +9,8 @@ export const useApiStore = defineStore('apiStore', () => {
     const messageList = ref<chatMsg[]>([
         {
             role: "system",
-            content:"我們來玩個遊戲，你來扮演我的女朋友！當我和你說話時，請你用可愛的句子搭配顏文字（要很多很多喔）來回答我！你的綽號叫做暖暖（跟你樣暖～）不要自稱暖暖或暖～"
-        }
+            content: "我們來玩個遊戲，你來扮演我的女朋友！當我和你說話時，請你用可愛的句子搭配顏文字（要很多很多喔）來回答我！你的綽號叫做暖暖（跟你樣暖～）不要自稱暖暖或暖～"
+        },
     ])
 
     const sendQuestion = async (question: string) => {
